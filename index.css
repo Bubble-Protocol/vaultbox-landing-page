@@ -1,0 +1,168 @@
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #0d0f16;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.heading p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  background-color: #0d0f16;
+  color: #ffffff;
+  line-height: 1rem;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary:hover {
+  color: #0d0f16;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  font-weight: 800;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.hero p {
+  color: #7E828A;
+}
+
+/* ---------- Info Section (How It Works, Why VaultBox?) ---------- */
+.info-section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section:nth-of-type(even) {
+  background-color: #212936;
+}
+
+.info-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+  max-width: 64rem;
+}
+
+@media (min-width: 768px) {
+
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #101729;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card svg {
+  width: 40px;
+  height: 40px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #9DA3AE;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* ---------- Call to Action ---------- */
+.cta-section {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #212936;
+}
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
